@@ -7,6 +7,11 @@ import java.util.Stack;
  *
  */
 public class PrintListReversingly_Iteratively {
+	public static class ListNode {
+		int data;
+		ListNode next;
+	}
+	
 	public void Print_Iteratively(ListNode headNode){
 		Stack<ListNode> stack=new Stack<ListNode>();
 		ListNode pNode=headNode;
