@@ -39,7 +39,7 @@ public class Problem15 {
 		System.out.println(behind.value);
 		return behind;
 	}
-	public static void mian(String []args){
+	public static void main(String []args){
 		Problem15 test=new Problem15();
 		ListNode2 head=new ListNode2();
 		ListNode2 listNode1 = new ListNode2();
