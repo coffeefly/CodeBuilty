@@ -1,7 +1,5 @@
 package 剑指offer;
 
-import 剑指offer.Problem16.ListNode;
-
 /**
  * 题目：输入两个递增排序的链表，
  * 合并这两个链表并使新链表中的节点仍然是按照递增排序的
@@ -9,6 +7,10 @@ import 剑指offer.Problem16.ListNode;
  *
  */
 public class Problem17 {
+	public static class ListNode{
+		int key;
+		ListNode next;
+	}
 	/**
 	 * 合并两个递增排序的链表
 	 * @param head1 
@@ -57,6 +59,7 @@ public class Problem17 {
 		ListNode listNode2=new ListNode();
 		ListNode listNode3=new ListNode();
 		ListNode listNode4=new ListNode();
+		ListNode listNode5=new ListNode();
 		head1.key=1;
 		head1.next=listNode1;
 		listNode1.key=3;
@@ -69,9 +72,12 @@ public class Problem17 {
 		listNode3.next=null;
 		listNode4.key=6;
 		listNode4.next=null;
+		listNode5.key=7;
+		listNode5.next=null;
+		test.printNode(test.Merge(head2, null));
 		test.printNode(test.Merge(head1, head2));
-		test.printNode(test.Merge(listNode3, listNode4));
-		test.printNode(test.Merge(null, head2));
-
+		test.printNode(test.Merge(listNode4, listNode5));
+		test.printNode(test.Merge(null, null));
+		
 	}
 }
